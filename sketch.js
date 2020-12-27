@@ -5,8 +5,8 @@ var dogImg, happyDogImg;
 function preload()
 {
   //load images here
-  dogImg = loadImage("images/dogImg.png");
-  happyDogImg = loadImage("images/dogImg1.png");
+  dogImg = loadImage("dogImg.png");
+  happyDogImg = loadImage("dogImg1.png");
 }
 
 function setup() {
@@ -35,8 +35,8 @@ function draw() {
   //add styles here
   fill("white");
   textSize(15);
-  text("Note: Press UP_ARROW to feed Drago milk!", 10, 20);
-  text("Food Remaining: "+database.ref(foodS), 10, 100)
+  text("Note: Press UP_ARROW to feed Drago milk!", 100, 20);
+  text("Food Remaining: "+foodS, 170, 40)
 }
 
 function readStock(data){
